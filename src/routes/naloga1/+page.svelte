@@ -4,8 +4,18 @@
 
 	let seznam: number[] = [4, 5, 1, 489];
 	let prazenSeznam: number[] = [];
-
-	function zmnozi(stevila: number[]) {}
+	function zmnozi(stevila: number[]) {
+		let result = 1;
+		for (let i = 0; i < stevila.length; i++) {
+			const element = stevila[i];
+			result = result * element;
+		}
+		if (stevila.length == 0) {
+			return 0;
+		} else {
+			return result;
+		}
+	}
 
 	console.log(zmnozi(seznam)); // Test klica funkcije
 	console.log(zmnozi(prazenSeznam)); // Test klica funkcije
